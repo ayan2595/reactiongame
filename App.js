@@ -180,7 +180,7 @@ shuffleArray(array, start) {
             <View style={{flex:0.6, justifyContent:'space-between', alignItems:'center', marginTop:50}}>
             <View>
                   <View style={styles.ranking}>
-                  <Text>Rank 1</Text>
+                  <Text>Rank 1 </Text>
                   <Text>{this.state.scores[0].score}</Text>
                   </View>
             </View>
