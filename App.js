@@ -177,64 +177,84 @@ shuffleArray(array, start) {
     else if(this.state.isClicked===true && this.state.clicks>10)
         return(
             <View style ={styles.container}>
-            <View style={{flex:0.6, justifyContent:'space-between', alignItems:'center', marginTop:50}}>
+            <View style={{flex:0.6, alignItems:'center', marginTop:50}}>
             <View>
                   <View style={styles.ranking}>
-                  <Text>Rank 1 </Text>
+                  <View style={styles.rankings}>
+                  <Text>Rank 1</Text>
+                  </View>
                   <Text>{this.state.scores[0].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 2</Text>
+                  </View>
                   <Text>{this.state.scores[1].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 3</Text>
+                  </View>
                   <Text>{this.state.scores[2].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 4</Text>
+                  </View>
                   <Text>{this.state.scores[3].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 5</Text>
+                  </View>
                   <Text>{this.state.scores[4].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 6</Text>
+                  </View>
                   <Text>{this.state.scores[5].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 7</Text>
+                  </View>
                   <Text>{this.state.scores[6].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 8</Text>
+                  </View>
                   <Text>{this.state.scores[7].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 9</Text>
+                  </View>
                   <Text>{this.state.scores[8].score}</Text>
                   </View>
             </View>
             <View>
                   <View style={styles.ranking}>
+                  <View style={styles.rankings}>
                   <Text>Rank 10</Text>
+                  </View>
                   <Text>{this.state.scores[9].score}</Text>
                   </View>
             </View>
@@ -279,10 +299,18 @@ const styles = StyleSheet.create({
       paddingVertical:10,
     },
     ranking:{
-      width:100,
+      width:150,
       flexDirection:'row', 
       justifyContent:'space-between', 
-      alignItems:'center'
+      alignItems:'center',
+      borderWidth:1,
+      borderColor: 'black'
+      },
+      rankings:{
+      width: 75,
+      paddingRight:10,
+      borderRightWidth:1,
+      borderRightColor: 'black'
       }
           
   });
